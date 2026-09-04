@@ -1,8 +1,9 @@
-#include<easyx.h>
+#include"../inc/utils/Image.h"
 #include"../inc/Defines.h"
 #include <Windows.h>
 #include"../inc/Message.h"
 #include"../inc/Globals.h"
+#include"../inc/utils/ImageShow.h"
 
 
 void Init();
@@ -17,7 +18,7 @@ int APIENTRY WinMain(
     //初始化
     Init();
 
-    //Application* app = GetApplication();
+    Application* app = GetApplication();
 
     //主循环
     while (isRunning)
@@ -30,10 +31,10 @@ int APIENTRY WinMain(
             break;
         }
         //update game
-        //app->Update();
+        app->Update();
 
         //draw
-        //app->Draw();
+        app->Draw();
 
         FlushBatchDraw();
         Sleep(15);
@@ -52,17 +53,19 @@ void Init()
     ////init sound
     //InitFmodSystem();
 
-    ////load Image resource
-    //LoadImageResource(&batImage, L"res/Image.png", 0, 0, 20, 100);
-    //LoadImageResource(&ballImage, L"res/Image.png", 20, 0, 10, 10);
-
+    //load Image resource
+   /* LoadImageRes(&Image1, L"res/Image.png",0,0,20,100);*/
+    LoadImageRes(&I0, L"res/I0.png", 0, 0, 100, 175);
+    LoadImageRes(&I1, L"res/I1.png", 0, 0, 100, 175);
+    LoadImageRes(&I2, L"res/I2.png", 0, 0, 100, 175);
+    LoadImageRes(&I3, L"res/I3.png", 0, 0, 100, 175);
     ////load sound recource
     //LoadFmodSound(&bounceSound, "res/bounce.wav");
     //LoadFmodSound(&scoreSound, "res/score.wav");
 
-    ////init application
-    //Application* app = GetApplication();
-    //app->RegisterInterface(new MainInterface())->RegisterInterface(new GameInterface());
+    //init application
+    Application* app = GetApplication();
+    app->RegisterInterface(new MainInterface())->RegisterInterface(new PickFigureInterface())->RegisterInterface(new GameInterface())->RegisterInterface(new FinalInterface());
 
     BeginBatchDraw();
 }

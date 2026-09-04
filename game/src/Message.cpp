@@ -29,11 +29,13 @@ void PeekMouseMessage()
 	}
 }
 
+//键盘按键信息
 bool IsKeyDown(int key)
 {
 	return GetAsyncKeyState(key) & 0x8000;
 }
 
+//鼠标信息
 MouseMessage* GetMouseMessage()
 {
 	return &mouse;

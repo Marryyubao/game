@@ -361,3 +361,17 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Local character artwork is not included in the public source repository.
+/game/res/*.png
+
+# Local credentials and manually copied build/archive outputs.
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.exe
+*.dll
+*.zip
+*.7z
