@@ -24,6 +24,45 @@
     <ClCompile Include="src\Globals.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\ui\Button.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\MainInterface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\Application.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\PickFigureInterface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\Random.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\Team.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\Figure.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\Stats.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\GameInterface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\GameObject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\FinalInterface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\ImageShow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\Image.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="inc\Defines.h">
@@ -35,5 +74,43 @@
     <ClInclude Include="inc\Globals.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="inc\ui\Button.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ui\Interface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ui\Application.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utils\Random.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\game\Team.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\game\Stats.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\game\Figure.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\game\GameObject.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utils\ImageShow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utils\Image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\icyslime.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Image.png">
+      <Filter>资源文件</Filter>
+    </Image>
   </ItemGroup>
 </Project>

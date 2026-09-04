@@ -19,14 +19,41 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\game\Figure.cpp" />
+    <ClCompile Include="src\game\GameObject.cpp" />
+    <ClCompile Include="src\game\Stats.cpp" />
+    <ClCompile Include="src\game\Team.cpp" />
     <ClCompile Include="src\Globals.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Message.cpp" />
+    <ClCompile Include="src\ui\Application.cpp" />
+    <ClCompile Include="src\ui\Button.cpp" />
+    <ClCompile Include="src\ui\FinalInterface.cpp" />
+    <ClCompile Include="src\ui\GameInterface.cpp" />
+    <ClCompile Include="src\ui\PickFigureInterface.cpp" />
+    <ClCompile Include="src\ui\MainInterface.cpp" />
+    <ClCompile Include="src\utils\ImageShow.cpp" />
+    <ClCompile Include="src\utils\Image.cpp" />
+    <ClCompile Include="src\utils\Random.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="inc\Defines.h" />
+    <ClInclude Include="inc\game\Figure.h" />
+    <ClInclude Include="inc\game\GameObject.h" />
+    <ClInclude Include="inc\game\Stats.h" />
+    <ClInclude Include="inc\game\Team.h" />
     <ClInclude Include="inc\Globals.h" />
     <ClInclude Include="inc\Message.h" />
+    <ClInclude Include="inc\ui\Application.h" />
+    <ClInclude Include="inc\ui\Button.h" />
+    <ClInclude Include="inc\ui\Interface.h" />
+    <ClInclude Include="inc\utils\Image.h" />
+    <ClInclude Include="inc\utils\Random.h" />
+    <ClInclude Include="inc\utils\ImageShow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\icyslime.png" />
+    <Image Include="res\Image.png" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
